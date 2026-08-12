@@ -6,23 +6,23 @@ The Power BI dashboard file is hosted on Google Drive because the `.pbix` file e
 
 [Download the Power BI Dashboard](https://drive.google.com/file/d/1u9KNhbhtzORxIUBdNk9uUKTJAXr0DjO2/view?usp=drive_link)
 
-## Dashboard Preview
+## 🖼️ Dashboard Preview
 
-## Overview
+### Overview
 
-https://github.com/karansingh2328/Financial_Transaction_Analytics/blob/main/images/Dashboard%20Overview.png
+![Dashboard Overview](../images/Dashboard%20Overview.png)
 
-## Customer Analysis
+### Customer Analysis
 
-https://github.com/karansingh2328/Financial_Transaction_Analytics/blob/main/images/Customer%20Analysis.png
+![Customer Analysis](../images/Customer%20Analysis.png)
 
-## Merchant Analysis
+### Merchant Analysis
 
-https://github.com/karansingh2328/Financial_Transaction_Analytics/blob/main/images/Merchant%20Analysis.png
+![Merchant Analysis](../images/Merchant%20Analysis.png)
 
-## Fraud Analysis
+### Fraud Analysis
 
-https://github.com/karansingh2328/Financial_Transaction_Analytics/blob/main/images/Fraud%20Analysis.png
+![Fraud Analysis](../images/Fraud%20Analysis.png)
 
 The dashboard covers:
 

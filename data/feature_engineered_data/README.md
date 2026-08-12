@@ -15,4 +15,6 @@ The feature-engineered dataset was used for the project's EDA, SQL analysis, and
 
 The actual file is hosted on Google Drive because of its large size.
 
+> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
+
 [Download Feature-Engineered Data](https://drive.google.com/file/d/1hjuhL_HFuJVuc93oxo5dTiKd04AZMxuO/view?usp=drive_link)

@@ -1,74 +1,153 @@
 # 💳 Financial Transaction Analytics
 
-An end-to-end financial transaction analytics project focused on understanding **customer spending behavior, transaction activity, merchant performance, geographic patterns, time-based trends, and fraud risk**.
+An end-to-end **financial transaction analytics** project focused on understanding **customer spending, transaction behavior, merchant performance, geographic patterns, time-based activity, and fraud risk**.
 
-The project combines **Python, SQL, Excel, and Power BI** to transform raw financial transaction data into business-focused insights and interactive reporting.
+The project analyzes **1.29M+ transactions** from **January 2019 to June 2020** using **Python, SQL, Excel, and Power BI** to transform raw transaction data into business-focused insights.
 
 ---
 
-## 📂 Dataset
+## 🎯 Project Objectives
 
-| Attribute | Details |
+- Understand customer spending and transaction behavior
+- Identify high-value customers and high-performing locations
+- Analyze merchant and merchant-category performance
+- Compare transaction activity across age groups and time periods
+- Identify patterns associated with higher fraud risk
+- Build an interactive Power BI dashboard for business reporting
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool | Purpose |
 |---|---|
-| **Source** | Kaggle |
-| **Domain** | Financial Transactions |
-| **Rows** | 1,296,674 |
-| **Original Columns** | 24 |
-| **Analysis Period** | January 2019 – June 2020 |
+| **Python** | Data cleaning, feature engineering, EDA |
+| **Pandas** | Data manipulation and aggregation |
+| **Matplotlib & Seaborn** | Data visualization |
+| **PostgreSQL** | Business-focused SQL analysis |
+| **Excel** | Initial data exploration |
+| **Power BI** | Interactive dashboard and reporting |
+| **DAX** | KPI and analytical measures |
+| **GitHub** | Documentation and version control |
 
-The dataset contains information related to:
+---
 
-- Customers
-- Merchants
-- Merchant categories
-- Transaction amounts
-- Customer age
-- Location
-- Transaction date and time
-- Fraud labels
-- Geographic attributes
+## 🔄 Project Workflow
 
-### Dataset Files
+```text
+Raw Data
+   ↓
+Data Exploration
+   ↓
+Data Cleaning
+   ↓
+Feature Engineering
+   ↓
+SQL Business Analysis
+   ↓
+Python EDA
+   ↓
+Power BI Dashboard
+   ↓
+Business Insights
+```
 
-The actual datasets are hosted on Google Drive because some files exceed GitHub's regular individual-file size limit.
+---
 
-### 📁 Raw Data
+## 📊 Power BI Dashboard
 
-Original dataset used for the project.
+The Power BI dashboard brings the analysis together into an interactive reporting layer.
 
-> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
+### Dashboard Covers
 
-[**Download Raw Data**](https://drive.google.com/file/d/1NcEsWK-u5WXoEyC6srQ73oS6bEHwG74i/view?usp=drive_link)
+- Customer Analysis
+- Merchant Analysis
+- Transaction Performance
+- Geographic Performance
+- Fraud Analysis
+- Time-based Trends
 
-### 📁 Cleaned Data
+### 📥 Interactive Dashboard
 
-Dataset after data cleaning, validation, column restructuring, and removal of unnecessary fields.
+The `.pbix` file is hosted on Google Drive because it exceeds GitHub's regular individual-file size limit.
 
-> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
+[**Download Power BI Dashboard**](https://drive.google.com/file/d/1u9KNhbhtzORxIUBdNk9uUKTJAXr0DjO2/view?usp=drive_link)
 
-[**Download Cleaned Data**](https://drive.google.com/file/d/15yiUP6dDEl5z0dptTlt_sBpUdWGb2eA6/view?usp=drive_link)
+> **Note:** Google Drive may display a message saying it cannot scan this large file for viruses. This is a standard warning for large files. The dashboard can still be downloaded normally.
 
-### 📁 Feature-Engineered Data
+### 🖼️ Dashboard Preview
 
-Final analytical dataset containing engineered features used for customer, transaction, geographic, time-based, and fraud analysis.
+### Overview
 
-> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
+![Dashboard Overview](images/Dashboard%20Overview.png)
 
-[**Download Feature-Engineered Data**](https://drive.google.com/file/d/1hjuhL_HFuJVuc93oxo5dTiKd04AZMxuO/view?usp=drive_link)
+### Customer Analysis
 
-More information about each dataset stage is available in the [`data`](data/) folder.
+![Customer Analysis](images/Customer%20Analysis.png)
+
+### Merchant Analysis
+
+![Merchant Analysis](images/Merchant%20Analysis.png)
+
+### Fraud Analysis
+
+![Fraud Analysis](images/Fraud%20Analysis.png)
+
+Additional analytical screenshots are available in the [`images`](images/) folder.
+
+---
+
+## 💡 Key Business Insights
+
+### Customer Spending
+
+Customers aged **35–50** contribute the highest total transaction value at approximately **$30.36M**, while the **18–35** age group records the highest transaction frequency.
+
+### High-Value Customers
+
+**Jeffrey Smith** is the highest-spending customer with approximately **$300.32K** in total transaction value, highlighting an opportunity to identify and retain high-value customers through personalized engagement strategies.
+
+### Merchant Performance
+
+**Grocery POS** generates the highest total transaction value at approximately **$14.46M**, contributing **15.85%** of total transaction value.
+
+**Gas & Transport** records the highest transaction frequency at approximately **131,659 transactions**, showing that transaction volume and transaction value are driven by different merchant categories.
+
+### Geographic Performance
+
+**Meridian** records the highest customer spending among the analyzed cities at approximately **$439.98K**, while **Texas** generates the highest state-level transaction value at approximately **$6.80M**.
+
+Several cities, including **Brandon, Houston, Meridian, and Phoenix**, consistently perform strongly across the available years, highlighting stable markets for customer retention and growth strategies.
+
+### Transaction Timing
+
+Transaction activity and transaction value vary across different times of day, indicating opportunities for time-based customer engagement and promotional strategies.
+
+### Fraud Risk
+
+Fraud rates vary across **transaction hours, merchant categories, merchants, cities, states, and age groups**.
+
+Late-night transactions show elevated observed fraud risk, with the highest hourly fraud rate reaching approximately **2.88% at 22:00**.
+
+**Shopping Net** records the highest observed fraud rate among merchant categories at approximately **1.76%**, suggesting that certain transaction segments may benefit from stronger risk-based monitoring.
+
+### Year-over-Year Performance
+
+Transaction value declined during parts of **2020 compared with 2019**, while the average transaction amount remained relatively stable. This suggests that changes in **transaction volume or customer activity** may have contributed significantly to the decline.
 
 ---
 
 ## 🧹 Data Cleaning
 
-The following data-cleaning steps were performed:
+The original dataset contained **1,296,674 rows and 24 columns**.
 
-- Converted transaction and date-of-birth columns to DateTime format
+Key cleaning steps included:
+
+- Converted transaction and date-of-birth fields to DateTime
 - Created a combined customer name
 - Renamed columns for business-friendly readability
 - Removed the unnecessary `Unnamed: 0` column
-- Removed `merch_zipcode` because of 15.11% missing values and the availability of latitude/longitude
+- Removed `merch_zipcode` because **15.11%** of values were missing and latitude/longitude were available
 - Checked for duplicate records
 - Validated transaction amounts
 - Validated transaction dates
@@ -76,12 +155,10 @@ The following data-cleaning steps were performed:
 
 ### Final Dataset
 
-| Metric | Value |
-|---|---:|
-| **Rows** | 1,296,674 |
-| **Columns** | 21 |
-| **Missing Values** | 0 |
-| **Duplicate Records** | 0 |
+- **Rows:** 1,296,674
+- **Columns:** 21
+- **Missing Values:** 0
+- **Duplicate Records:** 0
 
 Detailed documentation:
 
@@ -92,7 +169,7 @@ Detailed documentation:
 
 ## ⚙️ Feature Engineering
 
-Twelve additional features were created to support business analysis:
+Twelve analytical features were created to support customer, transaction, geographic, temporal, and fraud analysis:
 
 - `transaction_year`
 - `transaction_month`
@@ -107,7 +184,7 @@ Twelve additional features were created to support business analysis:
 - `transaction_amount_group`
 - `city_population_group`
 
-These features helped analyze:
+These features were used to analyze:
 
 - Customer segmentation
 - Transaction timing
@@ -123,9 +200,9 @@ Detailed documentation:
 
 ---
 
-## 🗄️ SQL Analysis
+## 🗄️ SQL Business Analysis
 
-PostgreSQL was used to answer business-focused questions related to:
+PostgreSQL was used to investigate business questions related to:
 
 - Customer spending
 - Customer transaction frequency
@@ -169,86 +246,23 @@ Python was used for:
 
 ---
 
-## 📊 Power BI Dashboard
+## 📂 Dataset Access
 
-The Power BI dashboard brings the analysis together into interactive business reporting.
+The large dataset files are hosted on Google Drive because of GitHub's individual-file size limitation.
 
-The dashboard covers:
+The repository contains documentation for each dataset stage:
 
-- Customer performance
-- Merchant performance
-- Transaction activity
-- Geographic performance
-- Fraud risk
-- Monthly trends
-- Transaction-value patterns
+- [`Raw Data`](data/raw_data/)
+- [`Cleaned Data`](data/cleaned_data/)
+- [`Feature-Engineered Data`](data/feature_engineered_data/)
 
-### 📥 Dashboard File
-
-The Power BI `.pbix` file is hosted on Google Drive because its file size exceeds GitHub's individual file-size limit.
-
-> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
-
-
-[**Download the Power BI Dashboard**](https://drive.google.com/file/d/1u9KNhbhtzORxIUBdNk9uUKTJAXr0DjO2/view?usp=drive_link)
-
-### 🖼️ Dashboard Preview
-
-### Overview
-
-![Dashboard Overview](images/Dashboard%20Overview.png)
-
-### Customer Analysis
-
-![Customer Analysis](images/Customer%20Analysis.png)
-
-### Merchant Analysis
-
-![Merchant Analysis](images/Merchant%20Analysis.png)
-
-### Fraud Analysis
-
-![Fraud Analysis](images/Fraud%20Analysis.png)
-
-Additional dashboard screenshots are available in the [`images`](images/) folder.
+> **Note:** Google Drive may display a warning saying it cannot scan very large files for viruses. This is a standard warning for large files and does not prevent normal downloading.
 
 ---
 
-## 💡 Key Business Insights
+## 📚 Project Documentation
 
-### Customer Spending
-
-A small group of high-value customers contributes significantly more transaction value than the average customer, making them potential VIP customers for retention and personalized engagement strategies.
-
-### Customer Age
-
-Customers aged **35–50** contribute the highest total transaction value, while the **18–35** age group records the highest transaction frequency. This indicates that different age groups contribute through different forms of customer engagement.
-
-### Merchant Performance
-
-**Grocery POS** generates the highest total transaction value, while **Gas Transport** records the highest transaction frequency. This indicates that transaction value and transaction volume are driven by different merchant categories.
-
-### Geographic Performance
-
-Cities such as **Meridian, Houston, Brandon, and Phoenix** consistently perform strongly in spending analysis, highlighting stable markets that may benefit from focused customer-retention and growth strategies.
-
-### Transaction Timing
-
-Transaction activity and spending vary across different times of day, with **night-time transactions contributing significant transaction value**.
-
-### Fraud Risk
-
-Fraud rates vary across merchant categories, locations, customer age groups, and transaction hours. **Late-night hours, particularly 22:00 and 23:00, show some of the highest observed fraud rates**, indicating the potential value of stronger time-based fraud monitoring.
-
-### Year-over-Year Trend
-
-Transaction value declined during parts of **2020 compared with 2019**, while average transaction value remained relatively stable. This suggests that changes in transaction volume or customer activity may have contributed significantly to the overall decline.
-
----
-
-## 📚 Documentation
-
-Detailed project documentation is available in the [`docs`](docs/) folder:
+Detailed documentation is available in the [`docs`](docs/) folder:
 
 - [`Business Goals`](docs/Business_Goals.md)
 - [`Business Problems`](docs/Business_Problems.md)
@@ -308,9 +322,11 @@ Financial_Transaction_Analytics/
 
 ## 🚀 Project Outcome
 
-This project demonstrates an end-to-end analytics workflow in which raw financial transaction data was transformed into **clean analytical datasets, engineered features, business-focused SQL analysis, Python-based exploratory insights, and an interactive Power BI dashboard**.
+This project demonstrates a complete analytics workflow:
 
-The project provides a practical view of how data can be used to understand **customer behavior, transaction performance, market opportunities, and fraud risk**.
+**Data Preparation → Feature Engineering → SQL Analysis → Python EDA → Power BI → Business Insights**
+
+It demonstrates practical experience in using data to understand **customer behavior, transaction performance, merchant opportunities, geographic patterns, and fraud risk**.
 
 ---
 
@@ -320,11 +336,13 @@ The project provides a practical view of how data can be used to understand **cu
 
 Aspiring **Data Analyst / Data Scientist** with hands-on experience in:
 
-**Python | SQL | Excel | Power BI | DAX | Pandas | Data Visualization**
+**Python | SQL | Excel | Power BI | DAX | Pandas | PostgreSQL | Data Visualization**
 
 - 🔗 [GitHub](https://github.com/karansingh2328)
-- 🔗 [LinkedIn](https://www.linkedin.com/in/karansingh2328/)
+- 🔗 [LinkedIn](YOUR_LINKEDIN_URL)
 - 📧 **Email:** karansingh.contact28@gmail.com
+
+> *Turning data into insights, one project at a time.*
 
 
 

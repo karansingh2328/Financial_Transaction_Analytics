@@ -1,6 +1,17 @@
 # Ignore large datasets
 data/
 
+# Keep documentation inside data folders
+!data/raw_data/
+!data/raw_data/README.md
+
+!data/cleaned_data/
+!data/cleaned_data/README.md
+
+!data/feature_engineered_data/
+!data/feature_engineered_data/README.md
+
+
 # Python cache
 __pycache__/
 *.pyc

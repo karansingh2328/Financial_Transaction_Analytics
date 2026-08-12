@@ -36,17 +36,23 @@ The actual datasets are hosted on Google Drive because some files exceed GitHub'
 
 Original dataset used for the project.
 
+> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
+
 [**Download Raw Data**](https://drive.google.com/file/d/1NcEsWK-u5WXoEyC6srQ73oS6bEHwG74i/view?usp=drive_link)
 
 ### 📁 Cleaned Data
 
 Dataset after data cleaning, validation, column restructuring, and removal of unnecessary fields.
 
+> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
+
 [**Download Cleaned Data**](https://drive.google.com/file/d/15yiUP6dDEl5z0dptTlt_sBpUdWGb2eA6/view?usp=drive_link)
 
 ### 📁 Feature-Engineered Data
 
 Final analytical dataset containing engineered features used for customer, transaction, geographic, time-based, and fraud analysis.
+
+> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
 
 [**Download Feature-Engineered Data**](https://drive.google.com/file/d/1hjuhL_HFuJVuc93oxo5dTiKd04AZMxuO/view?usp=drive_link)
 

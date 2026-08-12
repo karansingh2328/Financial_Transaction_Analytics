@@ -339,10 +339,9 @@ Aspiring **Data Analyst / Data Scientist** with hands-on experience in:
 **Python | SQL | Excel | Power BI | DAX | Pandas | PostgreSQL | Data Visualization**
 
 - 🔗 [GitHub](https://github.com/karansingh2328)
-- 🔗 [LinkedIn](YOUR_LINKEDIN_URL)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/karansingh2328/)
 - 📧 **Email:** karansingh.contact28@gmail.com
 
-> *Turning data into insights, one project at a time.*
 
 
 

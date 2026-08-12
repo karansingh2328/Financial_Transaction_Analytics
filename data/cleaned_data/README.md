@@ -19,4 +19,6 @@ Cleaning included:
 
 The cleaned dataset is hosted on Google Drive because of its large file size.
 
+> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
+
 [Download Cleaned Data](https://drive.google.com/file/d/15yiUP6dDEl5z0dptTlt_sBpUdWGb2eA6/view?usp=drive_link)

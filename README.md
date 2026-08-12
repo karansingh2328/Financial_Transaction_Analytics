@@ -179,7 +179,10 @@ The dashboard covers:
 
 ### 📥 Dashboard File
 
-The `.pbix` file is hosted on Google Drive because its file size exceeds GitHub's individual-file limit.
+The Power BI `.pbix` file is hosted on Google Drive because its file size exceeds GitHub's individual file-size limit.
+
+> **Note:** Google Drive may display a warning stating that it cannot scan this large file for viruses. This is a standard Google Drive message for large files. The file can still be downloaded normally.
+
 
 [**Download the Power BI Dashboard**](https://drive.google.com/file/d/1u9KNhbhtzORxIUBdNk9uUKTJAXr0DjO2/view?usp=drive_link)
 
